@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba2b96a8-37d2-414d-b818-65d046863f7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+    <list default="true" id="ba2b96a8-37d2-414d-b818-65d046863f7a" name="Changes" comment="Kiosk, Order class 수정">
+      <changelist_data name="oyeonjoo" email="oyj0842@naver.com" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="oyeonjoo &lt;oyj0842@naver.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -38,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -73,11 +84,26 @@
       <updated>1704707514788</updated>
       <workItem from="1704707515897" duration="3736000" />
       <workItem from="1704729186036" duration="13182000" />
-      <workItem from="1704804327781" duration="7091000" />
+      <workItem from="1704804327781" duration="13615000" />
+      <workItem from="1704860800000" duration="4769000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <option name="closed" value="true" />
+      <created>1704855687858</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704855687858</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <MESSAGE value="Kiosk, Order class 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kiosk, Order class 수정" />
   </component>
 </project>

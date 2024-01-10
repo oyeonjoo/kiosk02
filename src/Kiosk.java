@@ -8,10 +8,13 @@ public class Kiosk {
     private ArrayList<Product> FrozenMenu = new ArrayList<Product>(); // 프로즌 메뉴판
     private ArrayList<Product> DrinkMenu = new ArrayList<Product>(); // 드링크 메뉴판
     private Menu menu;
+    private Order order = new Order();
 
     public void welcome() {
         String info = "\"SHAKESHACK BURGER 에 오신걸 환영합니다.\"\n"  +
                 "아래 메뉴판을 보시고 메뉴를 골라 입력해주세요.";
+
+        System.out.println(info);
     }
     public void printCategory() {
 
@@ -22,6 +25,8 @@ public class Kiosk {
                 + "[ ORDER MENU ]\n"
                 + "4. Order       | 장바구니를 확인 후 주문합니다.\n"
                 + "5. Cancel      | 진행중인 주문을 취소합니다.\n";
+
+        System.out.println(category);
     }
 
     public void displayMenu() {
@@ -42,7 +47,6 @@ public class Kiosk {
         DrinkMenu.add(new Product("BottledWater", 1.0,"지리산 암반대수층으로 만든 프리미엄 생수"));
     }
     public void run() {
-        displayMenu(); // 전체 메뉴
         welcome(); // 고정 msg
         printCategory(); // 카테고리 선택 msg
         System.out.print("메뉴를 선택하세요 : ");
@@ -80,70 +84,37 @@ public class Kiosk {
                 System.out.println("메뉴를 선택하세요: ");
                 drinkAddQuestion(); // 장바구니에 추가할 건지
             } else if (menuChoice == 4) { // 주문하기 선택
-                Order.addOrder();
-            } else if (menuChoice == 5) { // 취소
 
-            } else System.out.println(" 선택하세요.");
+                    order.addOrder();
+
+            } else if (menuChoice == 5) { // 취소
+                order.cancelOrder();
+            } else System.out.println("다시 선택하세요.");
             run();
         }
     }
 
     public void burgerAddQuestion() {
         Scanner sc = new Scanner(System.in);
-        int burgerChoice = sc.nextInt(); // 향상된 for문 써서 리팩토링
-        if (burgerChoice == 1) {
-            System.out.println("\"" + BurgerMenu.get(0) + "\"" );
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
-        } else if (burgerChoice == 2) {
-            System.out.println("\"" + BurgerMenu.get(1) + "\"" );
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
-        } else if (burgerChoice == 3) {
-            System.out.println("\"" + BurgerMenu.get(2) + "\"");
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
-        } else if (burgerChoice == 4) {
-            System.out.println("\"" + BurgerMenu.get(3) + "\"");
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
+        int burgerChoice = sc.nextInt();
+        if (burgerChoice < 5) {
+            order.orderQuestion(BurgerMenu.get(burgerChoice-1));
         } else System.out.println("다시 선택하세요.");
     }
 
     public void frozenAddQuestion() {
         Scanner sc = new Scanner(System.in);
         int frozenChoice = sc.nextInt();
-        if (frozenChoice == 1) {
-            System.out.println("\"" + FrozenMenu.get(0) + "\"" );
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
-        } else if (frozenChoice == 2) {
-            System.out.println("\"" + FrozenMenu.get(1) + "\"" );
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
-        } else if (frozenChoice == 3) {
-            System.out.println("\"" + FrozenMenu.get(2) + "\"");
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
+        if (frozenChoice < 5) {
+            order.orderQuestion(FrozenMenu.get(frozenChoice-1));
         } else System.out.println("다시 선택하세요.");
     }
 
     public void drinkAddQuestion() {
         Scanner sc = new Scanner(System.in);
         int drinkChoice = sc.nextInt();
-        if (drinkChoice == 1) {
-            System.out.println("\"" + DrinkMenu.get(0) + "\"" );
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
-        } else if (drinkChoice == 2) {
-            System.out.println("\"" + DrinkMenu.get(1) + "\"" );
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
-        } else if (drinkChoice == 3) {
-            System.out.println("\"" + DrinkMenu.get(2) + "\"");
-            System.out.println("위 메뉴를 장바구니에 추가하시겠습니까?");
-            System.out.println("1. 확인        2. 취소");
+        if (drinkChoice < 5) {
+            order.orderQuestion(DrinkMenu.get(drinkChoice-1));
         } else System.out.println("다시 선택하세요.");
     }
-
 }

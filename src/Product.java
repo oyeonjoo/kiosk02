@@ -12,4 +12,9 @@ public class Product extends Menu {
     public void show() {
         System.out.printf("%-15s | %s\n", getName(), getDescription());
     }
-}ß
+
+    @Override
+    public String toString() {
+        return  getName() + " | " + getDescription() + " | " + getPrice();
+    }
+}
