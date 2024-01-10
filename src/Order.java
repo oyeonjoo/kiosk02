@@ -5,8 +5,6 @@
 public class Order {
     private int waitNum = 1; // 대기번호
     private final ArrayList<Product> cart = new ArrayList<>();
-    //private Product product;
-
 
     public void addOrder() {
         if(!cart.isEmpty()) {
@@ -43,9 +41,6 @@ public class Order {
             waitNum++;
             cart.clear();
             System.out.println("(3초후 메뉴판으로 돌아갑니다.)\n");
-            System.out.println("(2초후 메뉴판으로 돌아갑니다.)\n");
-            System.out.println("(1초후 메뉴판으로 돌아갑니다.)\n");
-
             try {
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
