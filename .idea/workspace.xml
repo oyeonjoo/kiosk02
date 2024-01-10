@@ -5,21 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba2b96a8-37d2-414d-b818-65d046863f7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kiosk02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainYT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mainyjoooo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product/Burger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product/Drink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product/FrozenCustard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1704707514788</updated>
       <workItem from="1704707515897" duration="3736000" />
-      <workItem from="1704729186036" duration="1415000" />
+      <workItem from="1704729186036" duration="13182000" />
+      <workItem from="1704804327781" duration="7091000" />
     </task>
     <servers />
   </component>

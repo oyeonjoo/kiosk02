@@ -13,9 +13,5 @@ public class Menu {
 
     public String getDescription() {
         return description;
-
-//    public void show() {
-//            System.out.printf("%-15s | %s\n", name, description);
-//        }
     }
 }
