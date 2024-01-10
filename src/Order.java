@@ -4,23 +4,23 @@
 
 public class Order {
     private int waitNum = 1; // 대기번호
-    private ArrayList<Product> Cart = new ArrayList<>();
-    private Product product;
+    private final ArrayList<Product> cart = new ArrayList<>();
+    //private Product product;
 
 
     public void addOrder() {
-        if(!Cart.isEmpty()) {
+        if(!cart.isEmpty()) {
             Scanner sc = new Scanner(System.in);
             System.out.println("아래와 같이 주문 하시겠습니까?\n");
             System.out.println("[ Orders ]");
 
-            for (Product a : Cart) {
+            for (Product a : cart) {
                 System.out.println(a);
             }
             System.out.println();
             System.out.println("[ Total ]");
             double totalPrice = 0;
-            HashSet<Product> totalProductSet = new HashSet<Product>(Cart);
+            HashSet<Product> totalProductSet = new HashSet<Product>(cart);
             for (Product item : totalProductSet) {
                 totalPrice += item.getPrice(); // 가격계산
             }
@@ -31,7 +31,7 @@ public class Order {
             completeOrder();
         }
     }
-    public int completeOrder() {
+    public void completeOrder() {
         Scanner sc = new Scanner(System.in);
         int orderChoice = sc.nextInt();
         sc.nextLine();
@@ -41,7 +41,7 @@ public class Order {
             System.out.println("주문이 완료되었습니다!\n");
             System.out.println("대기번호는 [ " + waitNum + " ] 번 입니다");
             waitNum++;
-            Cart.clear();
+            cart.clear();
             System.out.println("(3초후 메뉴판으로 돌아갑니다.)\n");
             System.out.println("(2초후 메뉴판으로 돌아갑니다.)\n");
             System.out.println("(1초후 메뉴판으로 돌아갑니다.)\n");
@@ -52,9 +52,6 @@ public class Order {
                 e.printStackTrace();
             }
         }
-
-        return waitNum;
-
     }
 
     // 주문 취소
@@ -65,7 +62,7 @@ public class Order {
 
         int cancelChoice = sc.nextInt();
         if (cancelChoice == 1) {
-            Cart.clear();
+            cart.clear();
             System.out.println("진행하던 주문이 취소되었습니다.\n");
         } else System.out.println("메뉴로 돌아갑니다.");
     }
@@ -80,7 +77,7 @@ public class Order {
         input = sc.nextInt();
         if (input == 1) { // 장바구니 추가
             System.out.println(product.getName() + "가 장바구니에 추가되었습니다.");
-            Cart.add(product);
+            cart.add(product);
         } else if (input == 2) {
             System.out.println("장바구니에 추가하지 않았습니다.");
         }

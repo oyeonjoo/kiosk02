@@ -1,7 +1,9 @@
+package kiosk01;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Mainyjoooo {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String info = "\"SHAKESHACK BURGER 에 오신걸 환영합니다.\"\n" +

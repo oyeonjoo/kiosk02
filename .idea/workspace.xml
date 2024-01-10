@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba2b96a8-37d2-414d-b818-65d046863f7a" name="Changes" comment="Kiosk, Order class 수정">
-      <changelist_data name="oyeonjoo" email="oyj0842@naver.com" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainYT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mainyjoooo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kiosk01/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/Burger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/Drink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product/FrozenCustard.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
       <workItem from="1704707515897" duration="3736000" />
       <workItem from="1704729186036" duration="13182000" />
       <workItem from="1704804327781" duration="13615000" />
-      <workItem from="1704860800000" duration="4769000" />
+      <workItem from="1704860800000" duration="8586000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <option name="closed" value="true" />
@@ -95,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704855687858</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Kiosk, Order class 수정">
+      <option name="closed" value="true" />
+      <created>1704870492190</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704870492190</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
