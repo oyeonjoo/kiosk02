@@ -105,7 +105,7 @@ public class Kiosk {
     public void frozenAddQuestion() {
         Scanner sc = new Scanner(System.in);
         int frozenChoice = sc.nextInt();
-        if (frozenChoice < 5) {
+        if (frozenChoice < 4) {
             order.orderQuestion(frozenMenu.get(frozenChoice-1));
         } else System.out.println("다시 선택하세요.");
     }
@@ -113,7 +113,7 @@ public class Kiosk {
     public void drinkAddQuestion() {
         Scanner sc = new Scanner(System.in);
         int drinkChoice = sc.nextInt();
-        if (drinkChoice < 5) {
+        if (drinkChoice < 4) {
             order.orderQuestion(drinkMenu.get(drinkChoice-1));
         } else System.out.println("다시 선택하세요.");
     }
